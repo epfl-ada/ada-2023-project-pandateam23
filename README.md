@@ -26,13 +26,13 @@ In the enthralling world of cinema 🎥, actors play a pivotal role, shaping and
 
 
 ## Proposed Timeline⏰📝:
-17.11.2023 - Project Milestone 2 Deadline
-24.12.2023 - 01.12.2023 - Pause the project for the duration of HW2
-11.12.2023 - Perform final analysis and visualizations and start datastory implementation
-18.12.2023 - Finish datastory
-19.12.2023 - Internal final review of notebook/datastory before final submission
-22.12.2023 - Project Milestone 3 Deadline
-24.12.2023 - Happy Christmas
+- 17.11.2023 - Project Milestone 2 Deadline
+- 24.12.2023 - 01.12.2023 - Pause the project for the duration of HW2
+- 11.12.2023 - Perform final analysis and visualizations and start datastory implementation
+- 18.12.2023 - Finish datastory
+- 19.12.2023 - Internal final review of notebook/datastory before final submission
+- 22.12.2023 - Project Milestone 3 Deadline
+- 24.12.2023 - Happy Christmas
 
 ## Organization within the team 🤝
 
