@@ -67,7 +67,7 @@ You can discover our Datastory [here](https://andreschakkal.github.io/ada-actor-
 <tbody>
   <tr>
     <td class="tg-0lax">André Schakkal</td>
-    <td class="tg-0lax">Writing the Datastory - Working on Actor Recognition </td>
+    <td class="tg-0lax">Writing the Datastory <br> Working on Actor Recognition </td>
   </tr>
   <tr>
     <td class="tg-0lax">Ali</td>
@@ -83,11 +83,11 @@ You can discover our Datastory [here](https://andreschakkal.github.io/ada-actor-
   </tr>
     <tr>
     <td class="tg-0lax">Diego</td>
-    <td class="tg-0lax">Working on the impact of historical events on Actors representation in terms of gender and ethnicity - Organizing the repo </td>
+    <td class="tg-0lax">Working on the impact of historical events on Actors representation in terms of gender and ethnicity <br> Organizing the repo </td>
   </tr>
      <tr>
     <td class="tg-0lax">Team together 🤲</td>
-    <td class="tg-0lax">Create meaningful visualizations<br><br>Continue exploring the dataset<br><br>Finalize Datastory implementation HTML coding<br>Develop a consistent, fluent and clear datastory</td>
+    <td class="tg-0lax">Create meaningful visualizations<br>Continue exploring the dataset<br>Finalize Datastory implementation HTML coding<br>Develop a consistent, fluent and clear datastory</td>
   </tr>
 </tbody>
 </table>
