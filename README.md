@@ -1,23 +1,40 @@
 # Actors Representation: Actor’s Recognition, Gender and Ethnicity throughout history and time 📆
 
 ## Abstract 
-In the enthralling world of cinema 🎥, actors play a pivotal role, shaping and being shaped by the ever-evolving tapestry of human history. Embark with us on a cinematic journey through time as we explore actor’s recognition and their evolving representation in the world of cinema across history. Has an actor's recognition and its longevity been influenced by specific attributes such as genre, ethnicity?  Acting isn't an isolated art form but rather intricately connected to the tapestry of human existence, always influenced and shaped by historical events. Our objective is to decode the impact of pivotal historical events, such as the Civil Rights and Feminist Movements, on the composition of actors in terms of gender and ethnicity. This project invites you on a cinematic journey delving into the life of actors who have graced the Cinema screens, examining how they have been portrayed, known and represented over time.
+In the enthralling world of cinema 🎥, actors play a pivotal role, shaping and being shaped by the ever-evolving tapestry of human history. Embark with us on a cinematic journey through time as we explore actor’s recognition and their evolving representation in the world of cinema across history. Has an actor’s recognition and its longevity been influenced by specific attributes such as gender or ethnicity? Acting isn’t an isolated art form but rather intricately connected to the tapestry of human existence, always influenced and shaped by historical events. Our objective is to decode the impact of pivotal historical events, such as the Civil Rights and Feminist Movements, on the composition of actors in terms of gender and ethnicity. This project invites you on a cinematic journey delving into the life of actors who have graced the Cinema screens, examining how they have been portrayed, known and represented over time.
+
+You can discover our Datastory [here](https://andreschakkal.github.io/ada-actor-website/).
 
 ## Research Questions 🔎
-1. How do age, gender, the genre of movies in which an actor has played, and ethnicity influence the attainment and magnitude of an actor’s recognition?
+1. How do age, gender, the genre of movies in which an actor has played, and ethnicity influence the evolution and magnitude of an actor’s recognition?
 2. Can specific patterns be identified regarding an actor's recognition longevity based on factors such as age, gender, ethnicity, and the genres of movies in which they have participated?
 3. To what extent have historical events, particularly the Civil Rights Movement and the Feminist Movement, influenced the composition of actors in terms of ethnicity and gender?
-4. In what ways have trends related to an actor's recognition and longevity evolved over time, considering changing societal norms and historical events? Meaning have age, gender, ethnicity, and the genre of movies of recognized actors evolved over time?
-5. How have changes in the representation of actors in cinema, resulting from historical events, affected the Box Office performance of movies? Is there a discernible correlation between shifts in representation due to historical events and the financial success or failure of movies at the Box Office?
+4. In what ways have trends related to an actor's recognition and longevity evolved over time, considering changing societal norms and historical events? Meaning have age, gender and ethnicity of recognized actors evolved over time?
+5. How does the recognition of specific actors vary with time? What are the factors that influence it?
 
-## Additional Datasets 📉
-- [IMDb Movies Dataset](https://developer.imdb.com/non-commercial-datasets/): To diversify the definition of movie success beyond financial terms, we aim to incorporate IMDb data. Two datasets, namely `title.basics.tsv.gz` and `title.ratings.tsv.gz`, will be utilized. The former includes movie name, release year, and runtime, enabling integration with our movie dataset. The latter provides average ratings and the number of votes received, offering a qualitative measure of success.
-- [World Bank](https://www.worldbank.org/en/research/brief/inflation-database): To accurately assess changes in the real value of movie budgets and box office revenue over time, we propose incorporating inflation rates data from the World Bank into our analysis. `inflation.xlsx` contains inflation rates by country and over the timespan 1970-2022.
-- [The Movies Dataset](https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset?resource=download&select=movies_metadata.csv) :  These files contain metadata for all 45,000 movies released before 2017 listed in the Full MovieLens Dataset. The dataset `movies_metadata.csv` allows us to complete missing movie’s box office revenues.
-- [Mojo Movie](https://www.kaggle.com/datasets/kalilurrahman/top-box-office-revenue-data-english-movies/data?select=boxofficemojoustop1000.tsv) : The files `boxofficemojointernationaltop1000.tsv` and `boxofficemojoustop1000.tsv`respectively contain metadata for the top 1000 international grossing movies and the top 1000 US Grossing Movies. These files are used to further complete missing values of movie’s box office revenues.
-- [Knowledge Graph API](https://developers.google.com/knowledge-graph?hl=fr) as a replacement for the deprecated Freebase API to obtain ethnicity names from their corresponding IDs in our dataset
-- Wikipedia pages of actors: To address missing values of actors' ethnicities, we developed a web scraping tool that extracts ethnicities from the respective actors' Wikipedia pages.
 
+## Additional Ressources 📉
+### Datatsets
+- [CMU Movie Summary Corpus](https://www.cs.cmu.edu/~ark/personas//): The CMU Movie Summary Corpus is a comprehensive dataset providing information about movies, including box office revenue, genre, release date, runtime, language, actors, and plot summaries.
+
+- [IMDb Movies Dataset](https://developer.imdb.com/non-commercial-datasets/): The IMDb Movies Dataset is a valuable resource for incorporating IMDb ratings into our analysis. It also helps enhance our dataset by filling in missing information not covered by the CMU Movie Summary Corpus.
+
+- [The Movies Dataset](https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset?resource=download&select=movies_metadata.csv) : The Movies Dataset is another dataset containing information about movies. We leverage this dataset to supplement our analysis with additional data that may be absent from the CMU Movie Summary Corpus.
+
+
+- [Mojo Movie](https://www.kaggle.com/datasets/kalilurrahman/top-box-office-revenue-data-english-movies/data?select=boxofficemojoustop1000.tsv) : The Mojo Movie dataset provides information on top box office revenue for English movies. It complements our analysis by filling potential gaps in the CMU Movie Summary Corpus.
+
+
+- [Global Database of Inflation](https://www.worldbank.org/en/research/brief/inflation-database): The Global Database of Inflation is a dataset containing information on world inflation. We use it to normalize movie revenues, ensuring a consistent monetary scale over the years.
+
+
+
+### APIs
+- [Knowledge Graph API](https://developers.google.com/knowledge-graph?hl=fr) We utilize the Knowledge Graph API as a replacement for the deprecated Freebase API. This helps us map Freebase IDs of ethnicities to their corresponding names.
+
+
+### Webpages
+- [List of African-American actors](https://en.wikipedia.org/wiki/List_of_African-American_actors), [List of Hispanic and Latino American actors](https://en.wikipedia.org/wiki/List_of_Hispanic_and_Latino_American_actors), and [List of Italian-American actors](https://en.wikipedia.org/wiki/List_of_Italian-American_actors): Wikipedia pages we use to supplement our analysis with additional actors' ethnicities that may be absent from the CMU Movie Summary Corpus.
 ## Methods: 
 1. **Normalization** is applied to variables with disparate scales, such as `Movie box office revenue` and `Movie rating`, to facilitate meaningful comparisons. Depending on the data distribution, a logarithmic transformation is implemented for heavy-tailed distributions, while standardization is utilized for those with a normal distribution.
 2. The **Pearson correlation coefficient** quantifies the linear relationship between two variables, and it's used to check the linear dependence between features and outcomes; in our analysis, it was employed to assess the correlation between annual average recognition coefficient of all actors and year/  average recognition coefficient of an actor in a movie and age of the actor at the movie's release date.
@@ -32,7 +49,7 @@ In the enthralling world of cinema 🎥, actors play a pivotal role, shaping and
 - 18.12.2023 - Finish datastory
 - 19.12.2023 - Internal final review of notebook/datastory before final submission
 - 22.12.2023 - Project Milestone 3 Deadline
-- 24.12.2023 - Happy Christmas
+- 24.12.2023 - Merry Christmas!
 
 ## Organization within the team 🤝
 
@@ -49,28 +66,28 @@ In the enthralling world of cinema 🎥, actors play a pivotal role, shaping and
 </thead>
 <tbody>
   <tr>
-    <td class="tg-0lax">Andre</td>
-    <td class="tg-0lax">Actor Recognition </td>
+    <td class="tg-0lax">André Schakkal</td>
+    <td class="tg-0lax">Writing the Datastory <br> Working on Actor Recognition </td>
   </tr>
   <tr>
     <td class="tg-0lax">Ali</td>
-    <td class="tg-0lax">Composition of actors in terms of gender over time</td>
+    <td class="tg-0lax">Working on Actors representation in terms of gender</td>
   </tr>
   <tr>
     <td class="tg-0lax">Peter</td>
-    <td class="tg-0lax">Actor recognition longevity</td>
+    <td class="tg-0lax">Working on Actor recognition longevity</td>
   </tr>
   <tr>
     <td class="tg-0lax">Nicolas</td>
-    <td class="tg-0lax">Composition of actors in terms of ethnicity over time</td>
+    <td class="tg-0lax">Working on Actors representation in terms of ethnicity</td>
   </tr>
     <tr>
     <td class="tg-0lax">Diego</td>
-    <td class="tg-0lax">Actor recognition, longevity and trends evolution over time, considering changing societal norms and historical events </td>
+    <td class="tg-0lax">Working on the impact of historical events on Actors representation in terms of gender and ethnicity <br> Organizing the repo </td>
   </tr>
      <tr>
     <td class="tg-0lax">Team together 🤲</td>
-    <td class="tg-0lax">Create meaningful visualizations<br><br>Continue exploring the dataset<br><br>Finalize Datastory implementation HTML coding<br>Develop a consistent, fluent and clear datastory</td>
+    <td class="tg-0lax">Create meaningful visualizations<br>Continue exploring the dataset<br>Finalize Datastory implementation HTML coding<br>Develop a consistent, fluent and clear datastory</td>
   </tr>
 </tbody>
 </table>
