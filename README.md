@@ -49,7 +49,7 @@ You can discover our Datastory [here](https://andreschakkal.github.io/ada-actor-
 - 18.12.2023 - Finish datastory
 - 19.12.2023 - Internal final review of notebook/datastory before final submission
 - 22.12.2023 - Project Milestone 3 Deadline
-- 24.12.2023 - Happy Christmas
+- 24.12.2023 - Merry Christmas!
 
 ## Organization within the team 🤝
 
@@ -66,24 +66,24 @@ You can discover our Datastory [here](https://andreschakkal.github.io/ada-actor-
 </thead>
 <tbody>
   <tr>
-    <td class="tg-0lax">Andre</td>
-    <td class="tg-0lax">Actor Recognition </td>
+    <td class="tg-0lax">André Schakkal</td>
+    <td class="tg-0lax">Writing the Datastory - Working on Actor Recognition </td>
   </tr>
   <tr>
     <td class="tg-0lax">Ali</td>
-    <td class="tg-0lax">Composition of actors in terms of gender over time</td>
+    <td class="tg-0lax">Working on Actors representation in terms of gender</td>
   </tr>
   <tr>
     <td class="tg-0lax">Peter</td>
-    <td class="tg-0lax">Actor recognition longevity</td>
+    <td class="tg-0lax">Working on Actor recognition longevity</td>
   </tr>
   <tr>
     <td class="tg-0lax">Nicolas</td>
-    <td class="tg-0lax">Composition of actors in terms of ethnicity over time</td>
+    <td class="tg-0lax">Working on Actors representation in terms of ethnicity</td>
   </tr>
     <tr>
     <td class="tg-0lax">Diego</td>
-    <td class="tg-0lax">Actor recognition, longevity and trends evolution over time, considering changing societal norms and historical events </td>
+    <td class="tg-0lax">Working on the impact of historical events on Actors representation in terms of gender and ethnicity - Organizing the repo </td>
   </tr>
      <tr>
     <td class="tg-0lax">Team together 🤲</td>
