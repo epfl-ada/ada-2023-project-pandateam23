@@ -70,19 +70,19 @@ You can discover our Datastory [here](https://andreschakkal.github.io/ada-actor-
     <td class="tg-0lax">Writing the Datastory <br> Working on Actor Recognition </td>
   </tr>
   <tr>
-    <td class="tg-0lax">Ali</td>
+    <td class="tg-0lax">Ali Elguindy</td>
     <td class="tg-0lax">Working on Actors representation in terms of gender</td>
   </tr>
   <tr>
-    <td class="tg-0lax">Peter</td>
+    <td class="tg-0lax">Peter Harmouch</td>
     <td class="tg-0lax">Working on Actor recognition longevity</td>
   </tr>
   <tr>
-    <td class="tg-0lax">Nicolas</td>
+    <td class="tg-0lax">Nicolas Matekalo</td>
     <td class="tg-0lax">Working on Actors representation in terms of ethnicity</td>
   </tr>
     <tr>
-    <td class="tg-0lax">Diego</td>
+    <td class="tg-0lax">Diego Vermeire</td>
     <td class="tg-0lax">Working on the impact of historical events on Actors representation in terms of gender and ethnicity <br> Organizing the repo </td>
   </tr>
      <tr>
